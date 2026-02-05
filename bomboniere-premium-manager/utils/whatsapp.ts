@@ -1,4 +1,4 @@
-import { formatDate } from './dateLogic';
+ import { formatDate } from './dateLogic';
 import { getSettings } from '../services/storage';
 
 interface CartItem {
@@ -32,7 +32,7 @@ const getGreeting = (clientName: string): string => {
   }
 
   // Default Greeting
-  return `💎 *BOMBONIERE PREMIUM* 💎\nOlá, *${clientName}*!`;
+  return `💎 *BOMBONIERE PREMIUM* 💎\nOlá, *${clientName}!*`;
 };
 
 export const generateSaleLink = (phone: string, data: SaleMessageProps): string => {
